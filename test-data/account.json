@@ -1,0 +1,11 @@
+{
+    "email": "test.automation@boximail.com",
+    "password": "Test123!",
+    "firstName": "John",
+    "lastName": "Adams",
+    "address": "Zmaja od Bosne 544",
+    "city": "Sarajevo",
+    "phoneNumber": "62123333",
+    "cardNumber": "44443333222211111111",
+    "expDate": "0223"
+}

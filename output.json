@@ -1,0 +1,555 @@
+{
+  "stats": {
+    "suites": 6,
+    "tests": 14,
+    "passes": 8,
+    "pending": 0,
+    "failures": 6,
+    "start": "2021-12-14T16:13:26.620Z",
+    "end": "2021-12-14T16:30:05.335Z",
+    "duration": 664572,
+    "testsRegistered": 14,
+    "passPercent": 57.142857142857146,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "86ff5374-a485-4e6f-9057-97df4be768a9",
+      "title": "",
+      "fullFile": "tests/Home.spec.js",
+      "file": "tests/Home.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "477cc11f-0454-4fe9-8312-354b61bf7e13",
+          "title": "SMOKE Home tests",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "IDEAL-2 User should be able to send messages to coach",
+              "fullTitle": "SMOKE Home tests IDEAL-2 User should be able to send messages to coach",
+              "timedOut": null,
+              "duration": 26801,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "homePage.clickOnMessageIcon();\nmessagePage.verifyPageElements();\nmessagePage.clickOnNewMessage();\nmessagePage.startNewThread(\"Test - IP Corporate US\", \"Deniz QA\", \"Test subject\", randomString);\nmessagePage.clickOnButton(\"Send\");\nmessagePage.verificationOfMessagesList(randomString);",
+              "err": {},
+              "uuid": "a1487794-8628-4028-a016-ba29b5de5c67",
+              "parentUUID": "477cc11f-0454-4fe9-8312-354b61bf7e13",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "a1487794-8628-4028-a016-ba29b5de5c67"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 26801,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "4cd7eedf-65bc-4854-9d6d-f5b2d566eeb0",
+      "title": "",
+      "fullFile": "tests/Login.spec.js",
+      "file": "tests/Login.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "0f332101-69aa-47c1-834b-1f9ee5a5e5a0",
+          "title": "SMOKE Login tests",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "IDEAL-1 User should be able to login",
+              "fullTitle": "SMOKE Login tests IDEAL-1 User should be able to login",
+              "timedOut": null,
+              "duration": 16643,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "//login is done in beforeEach\nhomePage.verifyPageElements();",
+              "err": {},
+              "uuid": "73740dba-36e8-4886-a198-519cb82d5509",
+              "parentUUID": "0f332101-69aa-47c1-834b-1f9ee5a5e5a0",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "IDEAL-3 User should be able to logout",
+              "fullTitle": "SMOKE Login tests IDEAL-3 User should be able to logout",
+              "timedOut": null,
+              "duration": 26339,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "homePage.clickOnAccountIcon();\nhomePage.clickOnlogout();\nloginPage.verifyPageElements();",
+              "err": {},
+              "uuid": "af26f9eb-0f1c-4b02-ad66-2bf066263ba5",
+              "parentUUID": "0f332101-69aa-47c1-834b-1f9ee5a5e5a0",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "73740dba-36e8-4886-a198-519cb82d5509",
+            "af26f9eb-0f1c-4b02-ad66-2bf066263ba5"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 42982,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "b913bb1d-83cf-4a07-8470-f5ecb91b5494",
+      "title": "",
+      "fullFile": "tests/MyDashboard.spec.js",
+      "file": "tests/MyDashboard.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "b130df15-90a1-4b13-a911-dc2e3466e535",
+          "title": "SMOKE MyDashboard tests",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "IDEAL-22 User should be able to add weight",
+              "fullTitle": "SMOKE MyDashboard tests IDEAL-22 User should be able to add weight",
+              "timedOut": null,
+              "duration": 23332,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "homePage.clickOnMyDashboard();\nmyDashboardPage.verifyPageElements();\nmyDashboardPage.navigateToBiometrics();\nmyDashboardPage.verifyTheBiometricsTabElements();\nmyDashboardPage.clickOnAdd();\nmyDashboardPage.addNewWeight(randomNumber, randomNumber, randomNumber);",
+              "err": {},
+              "uuid": "8ef99046-2297-44f7-92de-27ebf0d48bc4",
+              "parentUUID": "b130df15-90a1-4b13-a911-dc2e3466e535",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "IDEAL-23 User should be able to add measurements",
+              "fullTitle": "SMOKE MyDashboard tests IDEAL-23 User should be able to add measurements",
+              "timedOut": null,
+              "duration": 59933,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "\"C:\\\\Users\\\\User\\\\Source\\\\IdealProtein Automation repo\\\\cypress\\\\reports\\\\mochawesome-report\\\\assets/MyDashboard.spec.js/SMOKE MyDashboard tests -- IDEAL-23 User should be able to add measurements (failed).png\"",
+              "code": "homePage.clickOnMyDashboard();\nmyDashboardPage.navigateToBiometrics();\nmyDashboardPage.navigateToMeasurements();\nmyDashboardPage.clickOnAdd();\nmyDashboardPage.addNewMeasurements(randomNumber, randomNumber, randomNumber, randomNumber, randomNumber, randomNumber, randomNumber);",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 30000ms: Expected to find element: `.success`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 30000ms: Expected to find element: `.success`, but never found it.\n    at AccountDetailsPage.addNewMeasurements (https://platform.idealprotein.com/__cypress/tests?p=tests\\MyDashboard.spec.js:312:8)\n    at Context.eval (https://platform.idealprotein.com/__cypress/tests?p=tests\\MyDashboard.spec.js:365:23)",
+                "diff": null
+              },
+              "uuid": "bcf3507a-daef-4ffc-872e-c593043452ca",
+              "parentUUID": "b130df15-90a1-4b13-a911-dc2e3466e535",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "IDEAL-xx A example of a failed test (hope the only failed one :D)",
+              "fullTitle": "SMOKE MyDashboard tests IDEAL-xx A example of a failed test (hope the only failed one :D)",
+              "timedOut": null,
+              "duration": 62529,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "\"C:\\\\Users\\\\User\\\\Source\\\\IdealProtein Automation repo\\\\cypress\\\\reports\\\\mochawesome-report\\\\assets/MyDashboard.spec.js/SMOKE MyDashboard tests -- IDEAL-xx A example of a failed test (hope the only failed one :D) (failed).png\"",
+              "code": "homePage.clickOnMyDashboard();\nmyDashboardPage.navigateToBiometrics();\nmyDashboardPage.navigateToMeasurements();\nmyDashboardPage.clickOnAdd();\nmyDashboardPage.addNewMeasurements(number, number, number, number, number, number, number);",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 30000ms: Expected to find element: `.success`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 30000ms: Expected to find element: `.success`, but never found it.\n    at AccountDetailsPage.addNewMeasurements (https://platform.idealprotein.com/__cypress/tests?p=tests\\MyDashboard.spec.js:312:8)\n    at Context.eval (https://platform.idealprotein.com/__cypress/tests?p=tests\\MyDashboard.spec.js:372:23)",
+                "diff": null
+              },
+              "uuid": "916dd86b-9838-48da-a7ba-06eea9549431",
+              "parentUUID": "b130df15-90a1-4b13-a911-dc2e3466e535",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "8ef99046-2297-44f7-92de-27ebf0d48bc4"
+          ],
+          "failures": [
+            "bcf3507a-daef-4ffc-872e-c593043452ca",
+            "916dd86b-9838-48da-a7ba-06eea9549431"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 145794,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "4d199ef0-c8e3-437f-9cf9-892fd8106515",
+      "title": "",
+      "fullFile": "tests/MyJournal.spec.js",
+      "file": "tests/MyJournal.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "6ed7c12a-735f-4cae-9a47-202bb5ce8693",
+          "title": "SMOKE MyJournal tests",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "IDEAL-7 User should be able to log Breakfast meal",
+              "fullTitle": "SMOKE MyJournal tests IDEAL-7 User should be able to log Breakfast meal",
+              "timedOut": null,
+              "duration": 90090,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "homePage.clickOnMyJournal();\nmyJournalPage.verifyPageElements();\nmyJournalPage.clickOnAddMeals();\nmyJournalPage.searchAndSelectFood(\"Beef Filet\");\nmyJournalPage.logFood(\"breakfast\");\nmyJournalPage.verifyTheMealIsAdded(\"Beef Filet\");",
+              "err": {},
+              "uuid": "9afc83cd-247d-4f32-b2f4-1baad060a7f3",
+              "parentUUID": "6ed7c12a-735f-4cae-9a47-202bb5ce8693",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "IDEAL-8 User should be able to see supplements details",
+              "fullTitle": "SMOKE MyJournal tests IDEAL-8 User should be able to see supplements details",
+              "timedOut": null,
+              "duration": 21358,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "homePage.clickOnMyJournal();\nmyJournalPage.navigateToSupplementsSection();\nmyJournalPage.verifySupplementsSection();",
+              "err": {},
+              "uuid": "e8d84dfc-1dfd-4a62-a8aa-fa89872003c1",
+              "parentUUID": "6ed7c12a-735f-4cae-9a47-202bb5ce8693",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "IDEAL-57 User should be able to log Lunch meal",
+              "fullTitle": "SMOKE MyJournal tests IDEAL-57 User should be able to log Lunch meal",
+              "timedOut": null,
+              "duration": 57959,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "homePage.clickOnMyJournal();\nmyJournalPage.clickOnAddMeals();\nmyJournalPage.searchAndSelectFood(\"Beef Filet\");\nmyJournalPage.logFood(\"lunch\", false, \"1\");\nmyJournalPage.verifyTheMealIsAdded(\"Beef Filet\", false);",
+              "err": {},
+              "uuid": "da1ce3b0-b65b-475a-a6a4-1fbf051889f8",
+              "parentUUID": "6ed7c12a-735f-4cae-9a47-202bb5ce8693",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "IDEAL-59 User should be able to log Dinner meal",
+              "fullTitle": "SMOKE MyJournal tests IDEAL-59 User should be able to log Dinner meal",
+              "timedOut": null,
+              "duration": 59165,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "\"C:\\\\Users\\\\User\\\\Source\\\\IdealProtein Automation repo\\\\cypress\\\\reports\\\\mochawesome-report\\\\assets/MyJournal.spec.js/SMOKE MyJournal tests -- IDEAL-59 User should be able to log Dinner meal (failed).png\"",
+              "code": "homePage.clickOnMyJournal();\nmyJournalPage.clickOnAddMeals();\nmyJournalPage.searchAndSelectFood(\"Beef Filet\");\nmyJournalPage.logFood(\"dinner\");\nmyJournalPage.verifyTheMealIsAdded(\"Beef Filet\");",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 30000ms: Expected to find element: `.macro-info > p`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 30000ms: Expected to find element: `.macro-info > p`, but never found it.\n    at MyJournalPage.searchAndSelectFood (https://platform.idealprotein.com/__cypress/tests?p=tests\\MyJournal.spec.js:302:8)\n    at Context.eval (https://platform.idealprotein.com/__cypress/tests?p=tests\\MyJournal.spec.js:415:21)",
+                "diff": null
+              },
+              "uuid": "8d2c3c71-bcde-4483-8206-6138f7544220",
+              "parentUUID": "6ed7c12a-735f-4cae-9a47-202bb5ce8693",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "IDEAL-58 User should be able to log Snack meal",
+              "fullTitle": "SMOKE MyJournal tests IDEAL-58 User should be able to log Snack meal",
+              "timedOut": null,
+              "duration": 67530,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "homePage.clickOnMyJournal();\nmyJournalPage.clickOnAddMeals();\nmyJournalPage.searchAndSelectFood(\"Beef Filet\");\nmyJournalPage.logFood(\"snack\");\nmyJournalPage.verifyTheMealIsAdded(\"Beef Filet\");",
+              "err": {},
+              "uuid": "d3af759f-9520-46ae-aa9a-340af819095e",
+              "parentUUID": "6ed7c12a-735f-4cae-9a47-202bb5ce8693",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "IDEAL-20 User should be able to add water",
+              "fullTitle": "SMOKE MyJournal tests IDEAL-20 User should be able to add water",
+              "timedOut": null,
+              "duration": 89721,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "\"C:\\\\Users\\\\User\\\\Source\\\\IdealProtein Automation repo\\\\cypress\\\\reports\\\\mochawesome-report\\\\assets/MyJournal.spec.js/SMOKE MyJournal tests -- IDEAL-20 User should be able to add water (failed).png\"",
+              "code": "homePage.clickOnMyJournal();\nmyJournalPage.navigateToWaterSection();\nmyJournalPage.clickOnAddWater();\nmyJournalPage.logWater(randomNumber);\nmyJournalPage.verifyTheWaterIsAdded(randomNumber);",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 30000ms: Expected to find content: 'Successfully updated water consumption entry.' within the element: <span> but never did.",
+                "estack": "AssertionError: Timed out retrying after 30000ms: Expected to find content: 'Successfully updated water consumption entry.' within the element: <span> but never did.\n    at MyJournalPage.logWater (https://platform.idealprotein.com/__cypress/tests?p=tests\\MyJournal.spec.js:325:47)\n    at Context.eval (https://platform.idealprotein.com/__cypress/tests?p=tests\\MyJournal.spec.js:430:21)",
+                "diff": null
+              },
+              "uuid": "584a1db4-1f5e-4604-b1c2-24c6ff6100c4",
+              "parentUUID": "6ed7c12a-735f-4cae-9a47-202bb5ce8693",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "9afc83cd-247d-4f32-b2f4-1baad060a7f3",
+            "e8d84dfc-1dfd-4a62-a8aa-fa89872003c1",
+            "da1ce3b0-b65b-475a-a6a4-1fbf051889f8",
+            "d3af759f-9520-46ae-aa9a-340af819095e"
+          ],
+          "failures": [
+            "8d2c3c71-bcde-4483-8206-6138f7544220",
+            "584a1db4-1f5e-4604-b1c2-24c6ff6100c4"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 385823,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "c1248dde-6df7-4b80-928f-0b7f1a70bfea",
+      "title": "",
+      "fullFile": "tests/Preorder.spec.js",
+      "file": "tests/Preorder.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "502d4a37-05be-4861-bcdd-b7d563126e82",
+          "title": "SMOKE Preorder tests",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "IDEAL-6 User should be able to make a pre-order",
+              "fullTitle": "SMOKE Preorder tests IDEAL-6 User should be able to make a pre-order",
+              "timedOut": null,
+              "duration": 62678,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "\"C:\\\\Users\\\\User\\\\Source\\\\IdealProtein Automation repo\\\\cypress\\\\reports\\\\mochawesome-report\\\\assets/Preorder.spec.js/SMOKE Preorder tests -- IDEAL-6 User should be able to make a pre-order (failed).png\"",
+              "code": "homePage.clickOnPreorder();\npreorderPage.verifyPageElements();\npreorderPage.searchInput(\"Anti-Oxy\");\npreorderPage.addItemToCart();\npreorderPage.verifyProductIsAddedToCart(1); //preorderPage.increaseProductQuantity(1)\npreorderPage.verifyProductIsAddedToCart(1);\npreorderPage.leaveAComment(\"Testing, please ignore\");\npreorderPage.clickOnSendToMyClinic();\npreorderPage.verifyThePreorderSuccessPopup(\"Anti-Oxy\", 2, \"Testing, please ignore\");",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 30000ms: Expected to find content: '2' within the element: [ <ip-lang-switch.ng-star-inserted>, 24 more... ] but never did.",
+                "estack": "AssertionError: Timed out retrying after 30000ms: Expected to find content: '2' within the element: [ <ip-lang-switch.ng-star-inserted>, 24 more... ] but never did.\n    at PreorderPage.verifyThePreorderSuccessPopup (https://platform.idealprotein.com/__cypress/tests?p=tests\\Preorder.spec.js:297:42)\n    at Context.eval (https://platform.idealprotein.com/__cypress/tests?p=tests\\Preorder.spec.js:388:20)",
+                "diff": null
+              },
+              "uuid": "b1538528-1458-4d32-9c76-ce19e74290bb",
+              "parentUUID": "502d4a37-05be-4861-bcdd-b7d563126e82",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "b1538528-1458-4d32-9c76-ce19e74290bb"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 62678,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "2e40a1d6-7feb-4232-88d9-45632b048807",
+      "title": "",
+      "fullFile": "tests/Registretion.spec.js",
+      "file": "tests/Registretion.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [
+        {
+          "title": "An uncaught error was detected outside of a test",
+          "fullTitle": "An uncaught error was detected outside of a test",
+          "timedOut": null,
+          "duration": 494,
+          "state": "failed",
+          "speed": null,
+          "pass": false,
+          "fail": true,
+          "pending": false,
+          "context": "\"C:\\\\Users\\\\User\\\\Source\\\\IdealProtein Automation repo\\\\cypress\\\\reports\\\\mochawesome-report\\\\assets/Registretion.spec.js/ -- An uncaught error was detected outside of a test (failed).png\"",
+          "code": "throw err;",
+          "err": {
+            "message": "ReferenceError: The following error originated from your test code, not from Cypress.\n\n  > PreorderPage is not defined\n\nWhen Cypress detects uncaught errors originating from your test code it will automatically fail the current test.\n\nCypress could not associate this error to any specific test.\n\nWe dynamically generated a new test to display this failure.",
+            "estack": "ReferenceError: The following error originated from your test code, not from Cypress.\n\n  > PreorderPage is not defined\n\nWhen Cypress detects uncaught errors originating from your test code it will automatically fail the current test.\n\nCypress could not associate this error to any specific test.\n\nWe dynamically generated a new test to display this failure.\n    at Suite.eval (https://platform.idealprotein.com/__cypress/tests?p=tests\\Registretion.spec.js:502:26)\n    at eval (https://platform.idealprotein.com/__cypress/tests?p=tests\\Registretion.spec.js:501:3)\n    at testFilter (https://platform.idealprotein.com/__cypress/tests?p=tests\\Registretion.spec.js:393:7)\n    at Object../tests/Registretion.spec.js (https://platform.idealprotein.com/__cypress/tests?p=tests\\Registretion.spec.js:500:26)\n    at __webpack_require__ (https://platform.idealprotein.com/__cypress/tests?p=tests\\Registretion.spec.js:20:30)\n    at Object.0 (https://platform.idealprotein.com/__cypress/tests?p=tests\\Registretion.spec.js:522:18)\n    at __webpack_require__ (https://platform.idealprotein.com/__cypress/tests?p=tests\\Registretion.spec.js:20:30)\n    at eval (https://platform.idealprotein.com/__cypress/tests?p=tests\\Registretion.spec.js:84:18)\n    at eval (https://platform.idealprotein.com/__cypress/tests?p=tests\\Registretion.spec.js:87:10)\n    at eval (<anonymous>)",
+            "diff": null
+          },
+          "uuid": "0203e859-00fb-431c-9332-fa5444d5c5db",
+          "parentUUID": "2e40a1d6-7feb-4232-88d9-45632b048807",
+          "isHook": false,
+          "skipped": false
+        }
+      ],
+      "suites": [],
+      "passes": [],
+      "failures": [
+        "0203e859-00fb-431c-9332-fa5444d5c5db"
+      ],
+      "pending": [],
+      "skipped": [],
+      "duration": 494,
+      "root": true,
+      "rootEmpty": false,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports/mochawesome-report",
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "timestamp": "mmddyyyy_HHMMss"
+      },
+      "version": "5.2.0"
+    }
+  }
+}

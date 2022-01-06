@@ -1,0 +1,30 @@
+{
+  "integrationFolder": "./tests",
+  "reporter": "../node_modules/mochawesome/src/mochawesome.js",
+    "reporterOptions":{
+      "reportDir": "cypress/reports/mochawesome-report",
+      "overwrite": false,
+      "html": false,
+      "json": true,
+      "timestamp": "mmddyyyy_HHMMss"
+   },
+  "screenshotsFolder": "cypress/reports/mochawesome-report/assets",
+  "defaultCommandTimeout": 30000,
+  "requestTimeout": 30000,
+  "viewportWidth": 1400,
+  "viewportHeight": 1150,
+  "chromeWebSecurity": false,
+  "watchForFileChanges": false,
+  "screenshotOnRunFailure": true,
+  "baseUrl": "https://platform-stg.idealprotein.com/",
+  "env":{
+      "STG_URL": "https://platform-stg.idealprotein.com/",
+      "user": "deniz3@ip.com",
+      "pass": "Firebase1",
+      "TEST_TAGS":"smoke"
+  },
+  "retries": {
+    "runMode": 2,
+    "openMode": 1
+  }
+}

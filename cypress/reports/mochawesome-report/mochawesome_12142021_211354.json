@@ -1,0 +1,106 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-12-14T16:13:26.620Z",
+    "end": "2021-12-14T16:13:54.543Z",
+    "duration": 27923,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "86ff5374-a485-4e6f-9057-97df4be768a9",
+      "title": "",
+      "fullFile": "tests/Home.spec.js",
+      "file": "tests/Home.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "477cc11f-0454-4fe9-8312-354b61bf7e13",
+          "title": "SMOKE Home tests",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "IDEAL-2 User should be able to send messages to coach",
+              "fullTitle": "SMOKE Home tests IDEAL-2 User should be able to send messages to coach",
+              "timedOut": null,
+              "duration": 26801,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "homePage.clickOnMessageIcon();\nmessagePage.verifyPageElements();\nmessagePage.clickOnNewMessage();\nmessagePage.startNewThread(\"Test - IP Corporate US\", \"Deniz QA\", \"Test subject\", randomString);\nmessagePage.clickOnButton(\"Send\");\nmessagePage.verificationOfMessagesList(randomString);",
+              "err": {},
+              "uuid": "a1487794-8628-4028-a016-ba29b5de5c67",
+              "parentUUID": "477cc11f-0454-4fe9-8312-354b61bf7e13",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "a1487794-8628-4028-a016-ba29b5de5c67"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 26801,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports/mochawesome-report",
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "timestamp": "mmddyyyy_HHMMss"
+      },
+      "version": "5.2.0"
+    }
+  }
+}

@@ -1,0 +1,125 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-12-14T16:14:06.739Z",
+    "end": "2021-12-14T16:14:51.018Z",
+    "duration": 44279,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "4cd7eedf-65bc-4854-9d6d-f5b2d566eeb0",
+      "title": "",
+      "fullFile": "tests/Login.spec.js",
+      "file": "tests/Login.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "0f332101-69aa-47c1-834b-1f9ee5a5e5a0",
+          "title": "SMOKE Login tests",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "IDEAL-1 User should be able to login",
+              "fullTitle": "SMOKE Login tests IDEAL-1 User should be able to login",
+              "timedOut": null,
+              "duration": 16643,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "//login is done in beforeEach\nhomePage.verifyPageElements();",
+              "err": {},
+              "uuid": "73740dba-36e8-4886-a198-519cb82d5509",
+              "parentUUID": "0f332101-69aa-47c1-834b-1f9ee5a5e5a0",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "IDEAL-3 User should be able to logout",
+              "fullTitle": "SMOKE Login tests IDEAL-3 User should be able to logout",
+              "timedOut": null,
+              "duration": 26339,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "homePage.clickOnAccountIcon();\nhomePage.clickOnlogout();\nloginPage.verifyPageElements();",
+              "err": {},
+              "uuid": "af26f9eb-0f1c-4b02-ad66-2bf066263ba5",
+              "parentUUID": "0f332101-69aa-47c1-834b-1f9ee5a5e5a0",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "73740dba-36e8-4886-a198-519cb82d5509",
+            "af26f9eb-0f1c-4b02-ad66-2bf066263ba5"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 42982,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports/mochawesome-report",
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "timestamp": "mmddyyyy_HHMMss"
+      },
+      "version": "5.2.0"
+    }
+  }
+}

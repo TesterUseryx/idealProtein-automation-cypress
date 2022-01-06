@@ -1,0 +1,110 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2021-12-14T16:28:21.566Z",
+    "end": "2021-12-14T16:29:26.046Z",
+    "duration": 64480,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "c1248dde-6df7-4b80-928f-0b7f1a70bfea",
+      "title": "",
+      "fullFile": "tests/Preorder.spec.js",
+      "file": "tests/Preorder.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "502d4a37-05be-4861-bcdd-b7d563126e82",
+          "title": "SMOKE Preorder tests",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "IDEAL-6 User should be able to make a pre-order",
+              "fullTitle": "SMOKE Preorder tests IDEAL-6 User should be able to make a pre-order",
+              "timedOut": null,
+              "duration": 62678,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "\"C:\\\\Users\\\\User\\\\Source\\\\IdealProtein Automation repo\\\\cypress\\\\reports\\\\mochawesome-report\\\\assets/Preorder.spec.js/SMOKE Preorder tests -- IDEAL-6 User should be able to make a pre-order (failed).png\"",
+              "code": "homePage.clickOnPreorder();\npreorderPage.verifyPageElements();\npreorderPage.searchInput(\"Anti-Oxy\");\npreorderPage.addItemToCart();\npreorderPage.verifyProductIsAddedToCart(1); //preorderPage.increaseProductQuantity(1)\npreorderPage.verifyProductIsAddedToCart(1);\npreorderPage.leaveAComment(\"Testing, please ignore\");\npreorderPage.clickOnSendToMyClinic();\npreorderPage.verifyThePreorderSuccessPopup(\"Anti-Oxy\", 2, \"Testing, please ignore\");",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 30000ms: Expected to find content: '2' within the element: [ <ip-lang-switch.ng-star-inserted>, 24 more... ] but never did.",
+                "estack": "AssertionError: Timed out retrying after 30000ms: Expected to find content: '2' within the element: [ <ip-lang-switch.ng-star-inserted>, 24 more... ] but never did.\n    at PreorderPage.verifyThePreorderSuccessPopup (https://platform.idealprotein.com/__cypress/tests?p=tests\\Preorder.spec.js:297:42)\n    at Context.eval (https://platform.idealprotein.com/__cypress/tests?p=tests\\Preorder.spec.js:388:20)",
+                "diff": null
+              },
+              "uuid": "b1538528-1458-4d32-9c76-ce19e74290bb",
+              "parentUUID": "502d4a37-05be-4861-bcdd-b7d563126e82",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "b1538528-1458-4d32-9c76-ce19e74290bb"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 62678,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports/mochawesome-report",
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "timestamp": "mmddyyyy_HHMMss"
+      },
+      "version": "5.2.0"
+    }
+  }
+}

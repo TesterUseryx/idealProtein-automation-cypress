@@ -1,0 +1,153 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 3,
+    "passes": 1,
+    "pending": 0,
+    "failures": 2,
+    "start": "2021-12-14T16:15:06.391Z",
+    "end": "2021-12-14T16:17:33.756Z",
+    "duration": 147365,
+    "testsRegistered": 3,
+    "passPercent": 33.33333333333333,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "b913bb1d-83cf-4a07-8470-f5ecb91b5494",
+      "title": "",
+      "fullFile": "tests/MyDashboard.spec.js",
+      "file": "tests/MyDashboard.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "b130df15-90a1-4b13-a911-dc2e3466e535",
+          "title": "SMOKE MyDashboard tests",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "IDEAL-22 User should be able to add weight",
+              "fullTitle": "SMOKE MyDashboard tests IDEAL-22 User should be able to add weight",
+              "timedOut": null,
+              "duration": 23332,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "homePage.clickOnMyDashboard();\nmyDashboardPage.verifyPageElements();\nmyDashboardPage.navigateToBiometrics();\nmyDashboardPage.verifyTheBiometricsTabElements();\nmyDashboardPage.clickOnAdd();\nmyDashboardPage.addNewWeight(randomNumber, randomNumber, randomNumber);",
+              "err": {},
+              "uuid": "8ef99046-2297-44f7-92de-27ebf0d48bc4",
+              "parentUUID": "b130df15-90a1-4b13-a911-dc2e3466e535",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "IDEAL-23 User should be able to add measurements",
+              "fullTitle": "SMOKE MyDashboard tests IDEAL-23 User should be able to add measurements",
+              "timedOut": null,
+              "duration": 59933,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "\"C:\\\\Users\\\\User\\\\Source\\\\IdealProtein Automation repo\\\\cypress\\\\reports\\\\mochawesome-report\\\\assets/MyDashboard.spec.js/SMOKE MyDashboard tests -- IDEAL-23 User should be able to add measurements (failed).png\"",
+              "code": "homePage.clickOnMyDashboard();\nmyDashboardPage.navigateToBiometrics();\nmyDashboardPage.navigateToMeasurements();\nmyDashboardPage.clickOnAdd();\nmyDashboardPage.addNewMeasurements(randomNumber, randomNumber, randomNumber, randomNumber, randomNumber, randomNumber, randomNumber);",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 30000ms: Expected to find element: `.success`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 30000ms: Expected to find element: `.success`, but never found it.\n    at AccountDetailsPage.addNewMeasurements (https://platform.idealprotein.com/__cypress/tests?p=tests\\MyDashboard.spec.js:312:8)\n    at Context.eval (https://platform.idealprotein.com/__cypress/tests?p=tests\\MyDashboard.spec.js:365:23)",
+                "diff": null
+              },
+              "uuid": "bcf3507a-daef-4ffc-872e-c593043452ca",
+              "parentUUID": "b130df15-90a1-4b13-a911-dc2e3466e535",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "IDEAL-xx A example of a failed test (hope the only failed one :D)",
+              "fullTitle": "SMOKE MyDashboard tests IDEAL-xx A example of a failed test (hope the only failed one :D)",
+              "timedOut": null,
+              "duration": 62529,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "\"C:\\\\Users\\\\User\\\\Source\\\\IdealProtein Automation repo\\\\cypress\\\\reports\\\\mochawesome-report\\\\assets/MyDashboard.spec.js/SMOKE MyDashboard tests -- IDEAL-xx A example of a failed test (hope the only failed one :D) (failed).png\"",
+              "code": "homePage.clickOnMyDashboard();\nmyDashboardPage.navigateToBiometrics();\nmyDashboardPage.navigateToMeasurements();\nmyDashboardPage.clickOnAdd();\nmyDashboardPage.addNewMeasurements(number, number, number, number, number, number, number);",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 30000ms: Expected to find element: `.success`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 30000ms: Expected to find element: `.success`, but never found it.\n    at AccountDetailsPage.addNewMeasurements (https://platform.idealprotein.com/__cypress/tests?p=tests\\MyDashboard.spec.js:312:8)\n    at Context.eval (https://platform.idealprotein.com/__cypress/tests?p=tests\\MyDashboard.spec.js:372:23)",
+                "diff": null
+              },
+              "uuid": "916dd86b-9838-48da-a7ba-06eea9549431",
+              "parentUUID": "b130df15-90a1-4b13-a911-dc2e3466e535",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "8ef99046-2297-44f7-92de-27ebf0d48bc4"
+          ],
+          "failures": [
+            "bcf3507a-daef-4ffc-872e-c593043452ca",
+            "916dd86b-9838-48da-a7ba-06eea9549431"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 145794,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports/mochawesome-report",
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "timestamp": "mmddyyyy_HHMMss"
+      },
+      "version": "5.2.0"
+    }
+  }
+}
