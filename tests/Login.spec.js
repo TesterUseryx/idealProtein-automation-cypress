@@ -1,13 +1,12 @@
 /// <reference types="cypress" />
 import testFilter from '../helpers/testFilters.js'
 
-
 const StringGenerator = require('../helpers/StringGenerator')
 const HomePage = require('../pages/HomePage')
 const LoginPage = require('../pages/LoginPage')
 
 testFilter(['smoke','Login'], () => {
-    describe('SMOKE Login tests', () => {
+    describe('SMOKE Login testss', () => {
             const homePage = new HomePage()
             const loginPage = new LoginPage()
             const randomString = StringGenerator.randomName()
