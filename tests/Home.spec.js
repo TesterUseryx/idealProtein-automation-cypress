@@ -4,7 +4,6 @@ import testFilter from '../helpers/testFilters.js'
 const StringGenerator = require('../helpers/StringGenerator')
 const HomePage = require('../pages/HomePage')
 const MessagePage = require('../pages/MessagesPage')
-
 testFilter(['smoke','Home'], () => {
     describe('SMOKE Home tests', () => {
             const homePage = new HomePage()
