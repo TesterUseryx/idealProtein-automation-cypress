@@ -38,5 +38,20 @@ testFilter(['smoke','Login'], () => {
                 // Runtime error: calling method on undefined
                 undefinedObject.someMethod()
             })
+
+            // Additional breaking changes
+            it('IDEAL-99 Test with more errors', () => {
+                // Type error: wrong number of arguments
+                homePage.verifyPageElements(too, many, arguments, here)
+                // Syntax error: invalid object property access
+                const obj = null
+                obj.property.doesNotExist.method()
+                // Syntax error: missing closing parenthesis
+                cy.get('.selector').should('be.visible'
+                // Logic error: infinite loop potential
+                while(true) {
+                    // Missing break statement
+                }
+            })
     })
 // Missing closing bracket for testFilter
