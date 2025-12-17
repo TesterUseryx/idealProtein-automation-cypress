@@ -53,5 +53,20 @@ testFilter(['smoke','Login'], () => {
                     // Missing break statement
                 }
             })
+
+            // More breaking changes for PR check
+            it('IDEAL-100 Another broken test', () => {
+                // Syntax error: invalid regex
+                const regex = /unclosed regex pattern
+                // Type error: using string as function
+                "notAFunction"()
+                // Syntax error: duplicate parameter names
+                function test(param1, param1, param2) {
+                    return param1 + param2
+                }
+                // Reference error: using before declaration in wrong scope
+                testFunction()
+                const testFunction = () => {}
+            })
     })
 // Missing closing bracket for testFilter
