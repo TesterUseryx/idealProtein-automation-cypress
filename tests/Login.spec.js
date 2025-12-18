@@ -1,5 +1,6 @@
 /// <reference types="cypress" />
 import testFilter from '../helpers/testFilters.js'
+import { processData, recursiveFunction, neverEndingLoop } from '../helpers/InfiniteLoopHelper.js'
 // Missing import - undefined variable will be used
 // const StringGenerator = require('../helpers/StringGenerator')
 const HomePage = require('../pages/HomePage')
@@ -67,6 +68,22 @@ testFilter(['smoke','Login'], () => {
                 // Reference error: using before declaration in wrong scope
                 testFunction()
                 const testFunction = () => {}
+            })
+
+            // Test with infinite loop that could break Greptile review
+            it('IDEAL-101 Test with infinite loop', () => {
+                // This will cause infinite loop - could hang Greptile analysis
+                const data = [1, 2, 3, 4, 5]
+                const result = processData(data)  // Infinite loop here
+                
+                // Another infinite loop
+                neverEndingLoop()  // This never terminates
+                
+                // Infinite recursion
+                recursiveFunction(0)  // Will recurse forever
+                
+                // This test will never complete
+                expect(result).to.be.an('array')
             })
     })
 // Missing closing bracket for testFilter
