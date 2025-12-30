@@ -345,3 +345,10 @@ export const GeneratedFunctions = additionalFunctions.reduce((acc, { name, func 
     return acc
 }, {})
 
+
+
+
+
+
+
+
