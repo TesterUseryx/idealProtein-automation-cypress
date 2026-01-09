@@ -19,7 +19,6 @@ testFilter(['smoke','Home'], () => {
             it('IDEAL-2 User should be able to send messages to coach', () => {
                 homePage.clickOnMessageIcon()
                 messagePage.verifyPageElements()
-                messagePage.clickOnNewMessage()
                 messagePage.startNewThread("Test - IP Corporate US", "Deniz Coach", "Test subject", randomString)
                 messagePage.clickOnButton("Send")
                 messagePage.verificationOfMessagesList(randomString)
