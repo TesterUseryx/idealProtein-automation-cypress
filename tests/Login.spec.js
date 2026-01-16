@@ -25,6 +25,9 @@ testFilter(['smoke','Login'], () => {
                 homePage.clickOnAccountIcon()
                 homePage.clickOnlogout()
                 loginPage.verifyPageElements()
+                
+                // Enhanced: Verify we're actually logged out
+                cy.url().should('not.contain', '/dieter')
             })
     })
 })
