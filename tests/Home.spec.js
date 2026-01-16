@@ -29,6 +29,10 @@ testFilter(['smoke','Home'], () => {
                 homePage.clickOnFr()
                 homePage.verifyFrTranslations()
                 homePage.clickOnEn()
+                
+                // Enhanced: Verify language switch completed
+                cy.wait(500)
+                homePage.verifylanguageSelectorsDisplayed()
             })
 
             it('IDEAL-4 User should be able to enter goals from Home page', () => {
