@@ -18,7 +18,6 @@ testFilter(['smoke','Home'], () => {
             it('IDEAL-2 User should be able to send messages to coach', () => {
                 homePage.clickOnMessageIcon()
                 messagePage.verifyPageElements()
-                messagePage.clickOnNewMessage()
                 messagePage.startNewThread("Test - IP Corporate US", "Deniz Coach", "Test subject", randomString)
                 messagePage.clickOnButton("Send")
                 messagePage.verificationOfMessagesList(randomString)
@@ -29,6 +28,10 @@ testFilter(['smoke','Home'], () => {
                 homePage.clickOnFr()
                 homePage.verifyFrTranslations()
                 homePage.clickOnEn()
+                
+                // Enhanced: Verify language switch completed
+                cy.wait(500)
+                homePage.verifylanguageSelectorsDisplayed()
             })
 
             it('IDEAL-4 User should be able to enter goals from Home page', () => {
